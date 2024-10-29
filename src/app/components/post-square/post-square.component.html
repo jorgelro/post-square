@@ -1,0 +1,4 @@
+<button class="post-square" (click)="onClick()">
+  <span *ngIf="!isSelected; else selectedContent">{{ post.title }}</span>
+  <ng-template #selectedContent>{{ post[displayProperty] }}</ng-template>
+</button>
