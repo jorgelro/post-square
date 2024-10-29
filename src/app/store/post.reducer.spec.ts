@@ -9,7 +9,7 @@ describe('postReducer', () => {
   const initialState: PostState = {
     posts: [],
     selectedPostId: null,
-    error: undefined
+    error: null
   };
 
   const mockPosts: Post[] = [
