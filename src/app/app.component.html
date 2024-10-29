@@ -1,6 +1,6 @@
 <h1 class="p-3">Selected Post ID: {{ selectedPostId$ | async }}</h1>
 
-<mat-grid-list cols="10" rowHeight="300px" gutterSize="10px" class="grid-container">
+<mat-grid-list cols="10" rowHeight="200px" gutterSize="10px" class="grid-container">
   <mat-grid-tile *ngFor="let post of posts$ | async">
     <app-post-square [post]="post"></app-post-square>
   </mat-grid-tile>
