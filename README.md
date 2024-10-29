@@ -29,10 +29,10 @@ Overall it can be safe to use JWT if all the precautions are in place.
 
 # 2.
 
-Cross-Site Scripting (XSS): Attackers could inject malicious JavaScript into messages. If executed, this can steal user data or perform unauthorized actions as if it were the user.
++ Cross-Site Scripting (XSS): Attackers could inject malicious JavaScript into messages. If executed, this can steal user data or perform unauthorized actions as if it were the user.
 Mitigation: Use a library to sanitize HTML input to strip out any malicious scripts or tags, allowing only safe elements and attributes.
 
-Phishing Links: Attackers might embed deceptive links (fake login pages) disguised as legitimate ones. If clicked, these can steal user credentials or sensitive information.
++ Phishing Links: Attackers might embed deceptive links (fake login pages) disguised as legitimate ones. If clicked, these can steal user credentials or sensitive information.
 Mitigation: Check and sanitize URLs within messages.
 
 # 3.
@@ -41,13 +41,13 @@ Mutable objects can be changed after they’re created (arrays or objects in Jav
 
 Pros of Immutability:
 
-Predictability: No unexpected changes, which helps prevent (a lot of) bugs.
-Easier Debugging: State remains consistent, so you can trace data changes more easily.
++ Predictability: No unexpected changes, which helps prevent (a lot of) bugs.
++ Easier Debugging: State remains consistent, so you can trace data changes more easily.
 
 Cons of Immutability:
 
-Memory Usage: New objects are created for each change, which can use more memory.
-Performance: Constantly creating new objects might be slower in performance-critical applications.
++ Memory Usage: New objects are created for each change, which can use more memory.
++ Performance: Constantly creating new objects might be slower in performance-critical applications.
 
 In libraries like Redux, avoid mutating state directly; instead, use functions like map, filter or spread operators ({...obj}) to create copies.
 
@@ -55,8 +55,8 @@ In libraries like Redux, avoid mutating state directly; instead, use functions l
 
 To speed up a web application, I'd focus on these key steps:
 
-Compress images (use formats like WebP) and minify CSS/JS files.
-Use lazy loading for images and videos to load only when visible.
-Remove unused code, split large bundles, and use tree-shaking.
-Defer non-critical scripts or load them asynchronously.
-Limit and batch API requests to reduce the number of calls.
++ Compress images (use formats like WebP) and minify CSS/JS files.
++ Use lazy loading for images and videos to load only when visible.
++ Remove unused code, split large bundles, and use tree-shaking.
++ Defer non-critical scripts or load them asynchronously.
++ Limit and batch API requests to reduce the number of calls.
